@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  my_docker:
+    build: .
+    image: image1:v1
+    container_name: container_name
+    ports:
+      - "8000:8000"
+    volumes:
+      - "/data"
+    tty: true
+    
